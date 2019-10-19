@@ -13,6 +13,12 @@ pipeline {
             }
         }
     }
+
+     stage('install dependicies') {
+        steps {
+            bat 'composer install'
+        }
+    }
         
  
      
